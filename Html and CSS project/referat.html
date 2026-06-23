@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+   <title>Реферат №53</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+   <header>
+       <h1 class="title">Добри и лоши практики при изграждане и софтуерната архитектура на уеб сайтове</h1>
+   </header>
+
+   <div class="sidebar">
+    <h3 class="mainContent">СЪДЪРЖАНИЕ:</h3>  
+    <nav>
+      <ul>
+        <li><a href="#въведение">Въведение</a></li>
+        <li><a href="#Какво-е-софтуерна-архитектура">Какво е софтуерна архитектура?</a></li>
+        <li><a href="#Добри-практики-за-софтуерната-архитектура-на-уеб-сайтове">Добри практики за софтуерната архитектура на уеб сайтове</a></li>
+        <li><a href="#Лоши-практики-за-софтуерната-архитектура-на-уеб-сайтове">Лоши практики за софтуерната архитектура на уеб сайтове</a></li>
+        <li><a href="#Добри-практики-при-изграждане-на-уеб-сайтове">Добри практики при изграждане на уеб сайтове</a></li>
+        <li><a href="#Лоши-практики-при-изграждане-на-уеб-сайтове">Лоши практики при изграждане на уеб сайтове</a></li>
+        <li><a href="#Заключение">Заключение</a></li>
+        <li><a href="#Използвана-литература">Използвана литература</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div class="content">
+   <section>
+       <article>
+           <hgroup>
+               <h2 id="въведение">ВЪВЕДЕНИЕ</h2>
+           </hgroup>
+           <p>
+            Уеб сайтовете стават все по-важни в днешно време, като предлагат широка гама от функционалности и услуги. Един добре проектиран уеб сайт може да предостави отлично потребителско изживяване и да доведе до по-високо ниво на удовлетвореност на потребителите. Това може да има за резултат по-голямо ангажиране на потребителите, повече посещения на сайта и повече потребители, които ще се регистрират или закупят продуктите и услугите, които се предлагат. 
+           </p>
+           <p>
+            Архитектурата на сайта определя основната му структура и организация и може да има дългосрочен ефект върху неговата разширяемост, поддръжка и издръжливост. Добрата софтуерна архитектура може да осигури по-лесна поддръжка и разширяемост,  например при добавянето на нова функционалност или промяната на съществуваща, без да нарушава стабилността на системата. Също така добрата архитектура може да помогне да се гарантира, че системата е издръжлива и може да се справи с изискванията на бизнеса и потребителите. 
+           </p>
+           <p>
+            От друга страна, един лошо проектиран уеб сайт може да бъде труден за използване и да доведе до отпадане на потребителите. Това може да доведе до загуба на потенциални клиенти и намаление на продажбите. Освен това, лошата софтуерна архитектура може да доведе до слаба производителност и по-ниско ниво на сигурност, което може да доведе до загуба на данни и нарушаване на поверителността.
+           </p>
+       </article>
+
+<!-------------- Какво-е-софтуерна-архитектура ------------------------------------------------------------------------------------------------->
+
+       <article>
+        <h2 id="Какво-е-софтуерна-архитектура">КАКВО Е СОФТУЕРНА АРХИТЕКТУРА?</h2>
+        <p>
+            Софтуерната архитектура е процесът на проектиране на общата структура и поведение на софтуерната система.
+             Процесът включва избора на архитектурни шаблони, компоненти, интерфейси, модули и технологии, които работят заедно, за да реализират желаните функционалности и качества на системата. 
+             Софтуерната архитектура помага на заинтересованите страни да разберат и анализират как системата ще постигне основни качества като гъвкавост, наличност и сигурност.
+             <sup><a href = "#sources">[1] [2] [3]</a></sup>
+            </p>
+            <p class ="image-style">
+              <img src = "https://www.tutorialspoint.com/software_architecture_design/images/software_architecture_types.jpg" alt = "Picture of software architecture">
+             <p class = "image_description"><a href = "#1st_source"><sup>Фигура [1]</sup></a></p>
+            </p>
+
+       </article>
+<!--------------  Добри-практики-за-софтуерната-архитектура-на-уеб-сайтове ------------------------------------------------------------------------------------------------->
+       <article>
+         <h2 id="Добри-практики-за-софтуерната-архитектура-на-уеб-сайтове">ДОБРИ ПРАКТИКИ ЗА СОФТУЕРНАТА АРХИТЕКТУРА НА УЕБ САЙТОВЕ</h2>
+         <div class="well-software-architecture">
+           <img src="https://media.sitepen.com/blog-images/2020/06/1-%E2%80%93-What-Goes-In@2x.png" alt="Benefits of software architecture" width="600" height="380">
+           <p class = "image_description"><a href = "#2nd_source"><sup>Фигура [2]</sup></a></p>
+          </div>
+        <nav>
+          <ul>
+            <li>
+              <h3>Разделяне на задачите: </h3>
+              <p>
+                Разделянето на кода на отделни модули, всеки отговарящ за конкретен набор от задачи, може да намали сложността и да направи кода по-модулен и многократно използваем
+              </p>
+            </li>
+            <li>
+              <h3>Модулна архитектура: </h3>
+              <p>
+                Модулната архитектура разделя приложението на по-малки, независими модули, всеки от които може да бъде разработван и тестван отделно. Това може да доведе до по-добра мащабируемост и по-лесна поддръжка
+              </p>
+              <p class ="image-centered">
+                <img src = "https://www.tutisani.com/software-architecture/modular-software-architecture-files/ModularLayers.jpg" alt = "Picture of Modular architecture" width="700" height="420">
+               <p class = "image_description"><a href = "#11th_source"><sup>Фигура 11 </sup></a><span> -  пример за модулна архитектура.</span></p>
+              </p>
+            </li>
+            <li>
+              <h3>Слабо свързване: </h3>
+              <p>
+                Слабото свързване се отнася до степента на взаимозависимост между различните компоненти в системата. Ниска степен на свързаност може да доведе до по-добра мащабируемост, гъвкавост и по-лесна поддръжка
+              </p>
+            </li>
+            <li>
+              <h3>Стандартизация: </h3>
+              <p>
+                Следването на стандартите за кодиране и софтуер може да направи кода по-четим и по-лесен за поддръжка. Стандартизацията също може да помогне за намаляване на грешките и подобряване на качеството като цяло.
+              </p>
+            </li>
+            <li>
+              <h3>Съображения за сигурност: </h3>
+              <p>
+                Сигурността трябва да бъде висок приоритет, когато става въпрос за архитектурата на уеб сайта. Включването на подходящи мерки за сигурност може да помогне за предотвратяване на нарушения на данните и други кибератаки. Използвайте сигурни методи за достъп до базата данни на уеб сайта ви.
+              </p>
+            </li>
+            <li>
+              <h3>Мащабируемост: </h3>
+              <p>
+                Проектирайте архитектурата си, като имате предвид мащабируемостта. Това може да помогне за гарантиране, че уеб сайтът ви може да се справи с растежа и увеличеният трафик по време на развитието на бизнеса ви.
+              </p>
+            </li>
+            <li>
+              <h3>API-Driven Development: </h3>
+              <p>
+                API-driven development е подход за разработка на уеб приложения, при който се създава уебсайт около съвкупност от API-та (Application Programming Interface). Това може да доведе до по-добра мащабируемост, по-лесна поддръжка и по-добра интеграция с други системи. По този начин уебсайтът може да се развива и да се променя бързо и лесно в бъдеще.
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+
+<!-------------- Лоши-практики-за-софтуерната-архитектура-на-уеб-сайтове ------------------------------------------------------------------------------------------------->
+<article>
+  <h2 id="Лоши-практики-за-софтуерната-архитектура-на-уеб-сайтове">ЛОШИ ПРАКТИКИ ЗА СОФТУЕРНАТА АРХИТЕКТУРА НА УЕБ САЙТОВЕ</h2>
+  <nav>
+    <ul>
+      <li>
+        <h3>Монолитна архитектура:</h3>
+        <p>
+          Монолитна архитектура е когато цялото приложение е построено като единна единица, което може да доведе до липса на мащабируемост и гъвкавост. Вместо това използвайте архитектура на микроуслуги за по-добра мащабируемост и модулност.
+        </p>
+        <p class ="image-centered">
+          <img src = "http://khoadinh.github.io/assets/media/monolithic_architecture_diagram.png" alt = "Picture of Monolithic architecture" width="700" height="420">
+         <p class = "image_description"><a href = "#10th_source"><sup>Фигура 10 </sup></a><span> -  пример за монолитна архитектура.</span></p>
+        </p>
+      </li>
+      <li>
+        <h3>Прекомерно усложняване на архитектурата:</h3>
+        <p>
+          Прекомерното усложняване на архитектурата може да доведе до повече проблеми по-късно, като увеличени разходи за поддръжка и по-бавно развитие. Пазете архитектурата си проста и лесна за разбиране.
+        </p>
+      </li>
+      <li>
+        <h3>Висока свързаност:</h3>
+        <p>
+          Високата степен на свързаност се отнася до степента на зависимост между различни компоненти в системата. Високата степен на свързаност може да предизвика проблеми, като затруднения при поддръжката и ниска гъвкавост. Използвайте слаба свързаност, за да избегнете тези проблеми.
+        </p>
+      </li>
+      <li>
+        <h3>Неследване на стандарти:</h3>
+        <p>
+          Неследването на стандартите за програмен код и софтуер може да доведе до затруднения при поддръжка и актуализация на уеб сайта ви. Следвайте стандартните практики за програмен код в индустрията, за да гарантирате
+        </p>
+      </li>
+      <li>
+        <h3>Пренебрегване на сигурността:</h3>
+        <p>
+          Сигурността трябва да бъде висок приоритет, когато става дума за архитектурата на уеб сайта. Пренебрегването на включването на правилни мерки за сигурност може да доведе до нарушения на данните и други кибератаки. Уверете се, че уеб сайтът ви е защитен от началото.
+        </p>
+        <p>
+          Примерен случай за пренебрежение на сигурността при софтуерната архитектура на уебсайтове е неизползването на SSL сертификати за криптиране на комуникацията между уебсайта и клиента. Това оставя връзката отворена за потенциални кибер атаки, които могат да излагат на риск личните данни на потребителите. Освен това, отсъствието на SSL сертификат може да доведе до намаляване на доверието на потребителите в уебсайта и да намали трафика и продажбите.
+        </p>
+      </li>
+      <li>
+        <h3>Прекомерната употреба на рамки:</h3>
+        <p>
+          Въпреки че рамките могат да ускорят разработката и да я направят по-ефективна, тяхната прекомерна употреба може да доведе до неизменяема архитектура. Използвайте рамките разумно и избягвайте да сте твърде зависими от тях. 
+        </p>
+      </li>
+    </li>
+    <li>
+      <h3>Неправилно скалиране:</h3>
+      <p>
+        Неотчитането на възможността за скалируемост в архитектурата ви може да доведе до проблеми по-късно, когато уебсайтът ви расте по размер и сложност. Уверете се, че проектирате архитектурата си с мисъл за скалируемост. 
+      </p>
+    </li>
+    </ul>
+  </nav>
+</article>
+
+
+<!-------------- Добри-практики-при-изграждане-на-уеб-сайтове ------------------------------------------------------------------------------------------------->
+
+      <article>
+        <h2 id="Добри-практики-при-изграждане-на-уеб-сайтове">ДОБРИ ПРАКТИКИ ПРИ ИЗГРАЖДАНЕ НА УЕБ САЙТОВЕ</h2>
+        <div class="well-formed-website-picture">
+        <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28183850/home_post_2.gif" alt="Picture of well formed website" width="600" height="420">
+        <p class = "image_description"><a href = "#3th_source"><sup>Фигура [3]</sup></a></p>
+      </div>
+       <nav>
+         <ul>
+           <li>
+             <h3>Прост и чист дизайн: </h3>
+               <p>
+                 Един прост и изчистен дизайн не само изглежда добре, но също така помага на посетителите да навигират по сайта по-лесно. Избягвайте претоварването на сайта с прекалено много съдържание, изображения или графики.
+               </p>
+               <div class="example-of-clear-design">
+                <img src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2020/02/FlyHyer.png" alt="Pic of clear design" width="600" height="420">
+                <p class = "image_description"><a href = "#4th_source"><sup>Фигура [4]</sup></a></p>
+              </div>
+
+           </li>
+           <li>
+             <h3>Дизайн за различните типове устройства:</h3>
+             <p>
+               Уебсайтът да може да се преглежда лесно на всяко устройство, независимо дали става въпрос за настолен компютър, таблет или смартфон. Това е от съществено значение в днешния свят, където мобилните устройства се използват повече от всякога.
+             </p>
+             <img src="https://blog.hubspot.com/hs-fs/hubfs/respnsive-hero3.png?width=1500&name=respnsive-hero3.png" class="image-style">
+             <p class = "image_description"><a href = "#5th_source"><sup>Фигура [5]</sup></a></p>
+           </li>
+           <li>
+             <h3>Оптимизиране за търсачки:</h3>
+             <p>
+               Уебсайтът да е оптимизиран за търсачки, чрез използване на съответните ключови думи във вашето съдържание, метатегове и заглавия. Това ще помогне на вашия сайт да се изкачи по-високо в резултатите от търсенето и да привлича повече посетители.
+             </p>
+           </li>
+           <li>
+             <h3>Гарантиране на бързо зареждане:</h3>
+             <p>
+               Бавно зареждащ се уебсайт може да има негативен ефект върху потребителското изживяване и да увеличи броя на отказите. За да избегнете това, оптимизирайте изображенията си, използвайте кеширане и минимизирайте кода си, за да ускорите сайта си.
+             </p>
+           </li>
+           <li>
+             <h3>Лесна навигация: <sup class="sources-in-title"><a href = "#sources">[13]</a></sup></h3>
+             <p>
+               Уебсайтът трябва да е лесен за навигация, с ясни и кратки менюта и връзки. Това ще помогне на потребителите да намерят това, което търсят бързо и лесно.
+             </p>
+             <img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Website%20Design%20-%20Pillar%20Update-2.jpeg?width=975&name=Website%20Design%20-%20Pillar%20Update-2.jpeg" class="image-style">
+             <p class = "image_description"><a href = "#11th_source"><sup>Фигура 11</sup></a></p>
+           </li>
+           <li>
+             <h3>Включване на ясни призиви за действие (calls-to-action):  </h3>
+             <p>
+              Призивите за действие са от съществено значение за превръщането на посетителите в клиенти. Примери за призиви са да изпратят формуляр, да се абонират за бюлетин, да закупят продукт или да кликнат на бутон за повече информация. Целта им е да привлече вниманието на посетителите и да ги мотивира да извършат желаното действие. Уверете се, че призивите са ясни, кратки и са разположени на видни места на вашия сайт.
+            </p>
+            <div class="example-of-call-to-action">
+              <img src="https://popupsmart.com/blog/images/v/e/r/s/a/versace-cta-a9d92052.jpg" alt="Pic of call to action button" width="600" height="420">
+              <p class = "image_description"><a href = "#6th_source"><sup>Фигура [6]</sup></a></p>
+            </div>
+            <p class="photoDescribtion">На фигура <a href = "#6th_source"><sup> [6]</sup></a> може да забележите как в сайта на Версаче има активен бутон за добавяне на продукт в кошницата. Продуктът е перфектно разположен, така че да бъде забелязан.</p>
+           </li>
+           <li>
+             <h3>Използване на висококачествени изображения и съдържание: </h3>
+             <p>
+               Висококачествените изображения и добре написаното съдържание могат да помогнат за изграждането на доверие и авторитет към вашата аудитория. Уверете се, че съдържанието ви е актуално, занимателно и информативно.
+             </p>
+             <img src="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2020/10/Zillow-Website-Design.png" class="image-style">
+             <p class = "image_description"><a href = "#12th_source"><sup>Фигура 12</sup></a></p>
+           </li>
+           <li>
+             <h3>Тестване на уебсайта: </h3>
+             <p>
+               Преди да пуснете вашия уебсайт, го тествайте добре, за да уверите, че функционира правилно, зарежда бързо и е лесен за навигация. 
+             </p>
+             <p>Например, трябва да тествате навигацията на сайта, формите за контакт и регистрация, функционалността на търсачката и скоростта на зареждане на страниците. Тестовете трябва да се извършат на различни устройства и браузъри, за да се уверите, че сайтът ви работи правилно на всяко устройство и всякакъв размер на екран. </p>
+              
+           </li>
+           <li>
+             <h3>Поддържане на актуалена информация в сайта: </h3>
+             <p>
+               Редовно актуализирайте вашия уебсайт с ново съдържание, изображения и функции, за да задържите интереса на вашите посетители и да ги връщате за повече.
+             </p>
+           </li>
+           <li>
+             <h3>Използване на брояч на думи, за проверка на броя символи: </h3>
+             <p>
+               Можете да използвате инструменти като WordCounter и SERPsimulator, за да преброите броя на символите в мета описанието си, така че да не надвишите лимита.
+               Например, SERPsimulator ви показва как ще изглеждат заглавният таг и мета описанието на вашия уебсайт в резултатната страница на търсачката.
+             </p>
+             <!-- Вмъкване на примерно изображение -->
+           </li>
+         </ul>
+       </nav>
+
+<!-------------- Лоши-практики-при-изграждане-на-уеб-сайтове ------------------------------------------------------------------------------------------------->
+
+      </article>
+      <article>
+        <h2 id="Лоши-практики-при-изграждане-на-уеб-сайтове">ЛОШИ ПРАКТИКИ ПРИ ИЗГРАЖДАНЕ НА УЕБ САЙТОВЕ</h2>
+        <nav>
+          <ul>
+            <li>
+              <h3>Твърде малко (или твърде много) текст:</h3>
+              <p>
+                Търсачките четат по-добре текст от всичко друго. Затова е важно да има текст на уеб страницата ви. За да постигнат това, някои хора опитват да натрупат колкото се може повече текст на страница. Резултатът е, че търсачките след това имат затруднения да извлекат съответния текст.
+              </p>
+              <p>
+                Пример за прекалено много текст и прекалено малко:
+              </p>
+              <div class="image-container">
+                <img src="https://cs3240team8.files.wordpress.com/2012/09/messy.png" width="400" height="220">
+                <img src="https://www.nirmal.com.au/wp-content/uploads/2017/03/penny-juice.png" width="400" height="220">
+              </div>
+              <p class = "image_description"><a href = "#7th_source"><sup>Фигура [7]</sup></a>  <a href = "#8th_source"><sup>[8]</sup></a></p>
+            </li>
+            <li>
+              <h3>Лоша уебсайт сигурност</h3>
+              <p>
+                Потребителите се чувстват неспокойни, когато се опитват да навигират или да пазаруват през незащитен уебсайт. Скорошният ръст на нарушенията на личните данни и хакерските атаки прави необходимостта от добро защитаване на уебсайт. Някои уеб браузъри показват известие, за да предупредят потребителите, когато посетят незащитен уебсайт, а други, както е показано на снимката по-долу показват само в горния ляв ъгъл тази информация.
+              </p>
+              <img src="https://storage.googleapis.com/proudcity/alpha/uploads/2017/09/http-search.gif" class="image-style">
+             <p class = "image_description"><a href = "#14th_source"><sup>Фигура 14</sup></a></p>
+            </li>
+            <li>
+              <h3>Липса на търсачка</h3>
+              <p>
+                Търсачката е една от най-важните функции, които улесняват работата в уебсайта. Без търсачка, посетителите имат по-голяма трудност да намерят конкретните уебстраници, които търсят на вашия уебсайт. Липсата на търсачка предизвиква лошо потребителско изживяване и намалява времето, което потребителите прекарват на вашия уебсайт
+              </p>
+            </li>
+            <li>
+              <h3>Липса на предварително изготвен план</h3>
+              <p>
+                При изграждането на уебсайт, идеята е същата като при отварянето на магазин, ресторант или всякакъв друг бизнес - вие се нуждаете от план. Трябва да разберете кой е вашата целева аудитория, вашия USP (уникално предложение за продажба), как ще рекламирате уебсайта си и как ще го развивате. Всяка фаза от изграждането на уебсайт изисква много изследвания, ако не го направите, ще строите уебсайт, който се надявате, че е това, което искат вашите потребители, без да знаете дали наистина е така. Неизготвянето на план за уебсайта е една от най-големите грешки, които трябва да избягвате, когато строите уебсайт.
+              </p>
+            </li>
+            <li>
+              <h3>Прекалено много или на неправилно място реклами</h3>
+              <p>
+                Анализирайте рекламите си внимателно. Ако ви дразнят дори само малко, те определено ще подразнят и отблъснат и вашите посетители. Обърнете особено внимание на изкачащите прозорци. Въпреки че те общо взето се затварят/минимизират, уверете се, че са лесни за затваряне и не са на цял екран.
+              </p>
+              <div class="example-too-mush-ads">
+                <img src="https://justpublishingadvice.com/wp-content/uploads/2019/07/daily-mail-ads-page.jpg" alt="Pic of too much ads in page" width="700" height="430">
+                <p class = "image_description"><a href = "#9th_source"><sup>Фигура [9]</sup></a></p>
+              </div>
+            </li>
+            <li>
+              <h3>Неизвършване на тестове: </h3>
+              <p>
+                Неизвършването на тестове на уебсайта може да доведе до проблеми като счупени връзки, бавно зареждане и други проблеми с функционалността, които ще навредят на потребителското изживяване. Тествайте уебсайта си подробно преди да го пуснете, за да се уверите, че всичко работи гладко
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+
+
+<!--------------------------------------- Заключение ------------------------------------------------------------------------------------------------->
+      <article>
+        <h2 id="Заключение">ЗАКЛЮЧЕНИЕ</h2>
+        <p>
+          Изграждането на уеб сайтове е много повече от просто създаване на една страница. Добрата софтуерна архитектура на уеб сайтове е от изключителна важност за успеха на един проект. Нужно е да се използват добри практики като сигурност, мащабируемост и API-Driven Development, за да се постигне по-добра функционалност, по-лесна поддръжка и по-добра интеграция с други системи. 
+        </p>
+        <p>
+          От друга страна, лошата софтуерна архитектура може да доведе до сериозни проблеми, като забавяне на процесите, забавяне на уеб сайта, недостатъчна сигурност и затруднена поддръжка.
+        </p>
+        <p>
+          В крайна сметка e важно да се спазват добрите практики и да се актуализират технологиите, за да се гарантира, че уеб сайтовете са сигурни, функционални и лесно достъпни за потребителите.
+        </p>
+      </article>
+   </section>
+
+   <section>
+    <article>
+      <h2 id="Използвана-литература">Използвана литература:</h2>
+      <nav id="sources">
+       <ul>
+          <!-- <li ><a href="#" target="_blank">Фигура 3</a></li> -->
+           <li><a href="https://www.sei.cmu.edu/our-work/software-architecture"target="_blank">[1] Software Engineering Institute</a><span>, последно прочетен на на 2023.04.16</span></li>
+           <li><a href="https://www.techopedia.com/definition/24596/software-architecture"target="_blank">[2] Techopedia, Software Architecture</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.cloudflare.com"target="_blank">[3] Cloudflare</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://dev.to/lanars_inc/web-application-architecture-best-practices-and-guides-35ek"target="_blank">[4] Web Application Architecture: Best Practices and Guides</a><span>, последно прочетен на на 2023.04.16</span></li>
+           <li><a href="https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design"target="_blank">[5] 10 Principles Of Good Web Design</a><span>, последно прочетен на на 2023.04.16</span></li>
+           <li><a href="https://www.upwork.com/resources/website-design-best-practices "target="_blank">[6] The 10 Best Website Design Best Practices </a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://blog.hubspot.com/blog/tabid/6307/bid/30557/6-guidelines-for-exceptional-website-design-and-usability.aspx"target="_blank">[7] 9 Guidelines & Best Practices for Exceptional Web Design and Usability</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://uxdesign.cc/the-importance-of-visual-meaning-in-user-interface-design-f94e29a10903 "target="_blank">[8] UX Collective - The Importance of Visuals in Web Design</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.crazyegg.com/blog/website-redesign-tips/ "target="_blank">[9]  Website Redesign Tips, Examples and Best Practices</a><span>, последно посетен на на 2023.04.20</span></li>
+           <li><a href="https://www.fifteendesign.co.uk/blog/the-importance-of-keeping-your-website-up-to-date/ "target="_blank">[10]  The Importance of Keeping Your Website Up To Date - Fifteen</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/ "target="_blank">[11] Nielsen Norman Group - Keep It Simple, Stupid: The Importance Of Clarity In Web Design</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://web.dev/responsive-web-design-basics/ "target="_blank">[12] Google Developers - Responsive Web Design Basics</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.usability.gov/tags/navigation-design.html "target="_blank">[13] Usability.gov – Navigation</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://dzone.com/articles/web-app-architecture-trends-best-practices-and-more "target="_blank">[14] DZone - Top 10 Web Architecture Best Practices You Need to Know</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://medium.com/distributed-knowledge/scalable-web-architectures-concepts-design-6fd372ee4541 "target="_blank">[15] Medium - Top 7 Web Architecture Best Practices for Building a Fast and Scalable Site</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://blog.hubspot.com/blog/tabid/6307/bid/6121/10-common-website-mistakes-and-how-to-fix-them.aspx "target="_blank">[16] 16 Top Website Mistakes to Avoid in 2021 [+ 16 Easy Fixes]</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.business2community.com/web-design/15-biggest-mistakes-avoid-building-website-01898967 "target="_blank">[17] 15 Biggest Mistakes To Avoid When Building A Website</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://usabilitygeek.com/10-most-common-web-design-mistakes-small-businesses-make/ "target="_blank">[18] 10 Most Common Web Design Mistakes Small Businesses Make</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.nten.org/blog/10-things-to-consider-when-planning-a-website-design-or-re-design "target="_blank">[19] 10 Things to Consider When Planning a Website Design (or Re-design)</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://www.businessnewsdaily.com/6540-how-to-test-your-business-idea.html "target="_blank">[20] New Business Idea? How to Test It Before Launching</a><span>, последно посетен на на 2023.04.16</span></li>
+           <li><a href="https://dzone.com/ "target="_blank">[21] DZone</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://medium.com/swlh/designing-inflatable-microservices-architecture-9976e63ad820" target="_blank">[22] Medium</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://www.infoworld.com/article/3632143/how-coupling-impacts-software-quality.html " target="_blank">[23] How coupling impacts software quality</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://techbeacon.com" target="_blank">[24] TechBeacon</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://www.ibm.com/topics/database-security"target="_blank">[25] Database Security: An Essential Guide - IBM</a><span>, последно посетен на на 2023.04.17</span></li>
+           <li><a href="https://stackify.com" target="_blank">[26] Stackify</a><span>, последно посетен на на 2023.04.17</span></li>
+           
+           
+           <!-- <li><a href="#">link </a></li> -->
+
+       </ul>
+   </nav>
+    </article>
+   </section>
+   <section>
+    <article>
+      <h2 id="Използвани-фигури">Източници на изображения:</h2>
+      <nav>
+       <ul>
+          <li id="1st_source"><a href="https://www.tutorialspoint.com/software_architecture_design/images/software_architecture_types.jpg" target="_blank">Фигура 1</a></li>
+          <li id="2nd_source"><a href="https://media.sitepen.com/blog-images/2020/06/1-%E2%80%93-What-Goes-In@2x.png" target="_blank">Фигура 2</a></li>
+          <li id="3th_source"><a href="https://www.keentodesign.com.au/wp-content/uploads/reale.webp " target="_blank">Фигура 3</a></li>
+          <li id="4th_source"><a href="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2020/02/FlyHyer.png " target="_blank">Фигура 4</a></li>
+          <li id="5th_source"><a href="https://blog.hubspot.com/hs-fs/hubfs/respnsive-hero3.png?width=1500&name=respnsive-hero3.png" target="_blank">Фигура 5</a></li>
+          <li id="6th_source"><a href="https://popupsmart.com/blog/images/v/e/r/s/a/versace-cta-a9d92052.jpg" target="_blank">Фигура 6</a></li>
+          <li id="7th_source"><a href="https://cs3240team8.files.wordpress.com/2012/09/messy.png" target="_blank">Фигура 7</a></li>
+          <li id="8th_source"><a href="https://www.nirmal.com.au/wp-content/uploads/2017/03/penny-juice.png" target="_blank">Фигура 8</a></li>
+          <li id="9th_source"><a href="https://justpublishingadvice.com/wp-content/uploads/2019/07/daily-mail-ads-page.jpg " target="_blank">Фигура 9</a></li>
+          <li id="10th_source"><a href="http://khoadinh.github.io/assets/media/monolithic_architecture_diagram.png" target="_blank">Фигура 10</a></li>
+          <li id="11th_source"><a href="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Website%20Design%20-%20Pillar%20Update-2.jpeg?width=975&name=Website%20Design%20-%20Pillar%20Update-2.jpeg" target="_blank">Фигура 11</a></li>
+          <li id="12th_source"><a href="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2020/10/Zillow-Website-Design.png" target="_blank">Фигура 12</a></li>
+          <li id="14th_source"><a href="https://storage.googleapis.com/proudcity/alpha/uploads/2017/09/http-search.gif" target="_blank">Фигура 14</a></li>
+          <!-- <li id="11th_source"><a href="#" target="_blank">Фигура 11</a></li> -->
+
+
+       </ul>
+   </nav>
+    </article>
+   </section>
+  </div>
+
+   <footer>
+    <p>&copy; Petya Petrova, 62630</p>
+    <p id = "last_modification">Последна модификация: 3 Май 2023 г.</p>
+   </footer>
+</body>
+</html>
